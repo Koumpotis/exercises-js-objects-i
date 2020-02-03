@@ -7,11 +7,12 @@ let process = require('process');
 
 let user = {};
 
-user['firstName'] = '<Change This>';
-user['lastName'] = '<Change This>';
-user['currentLocation'] = '<Change This>';
-user['favoriteSongs'] = ['One Song', 'Another Great Song', 'Last Great Song'];
-user['age'] = 108;
+user['firstName'] = 'Christos';
+user['lastName'] = 'Koumpotis';
+user['currentLocation'] = 'California';
+user['favoriteSongs'] = ['Rap God', 'Alphabet Song', 'Let it go'];
+user['age'] = 19;
+user['eyeColor'] = 'Green';
 
 // To get started, set user['canBeDisplayed'] to true instead of false
 user['canBeDisplayed'] = true;
@@ -31,6 +32,14 @@ if (user['age'] >= 100) {
   console.log(`Wow! You're ${user['age']} years old? Fewer than 0.2% reach that age.`);
   console.log();
 }
+if (user['age'] < 21) {
+  console.log(`Wow! You're ${user['age']} years old? I am sorry for you. I am sure you wish you were back in Europe where you get all your adult rights when you turn 18.`);
+  console.log();
+}
+console.log(`Amazing! I love ${user['eyeColor']} eyes! It's probably my favorite eye color possible!!!`);
+console.log();
+console.log("Let's talk about something different now, How about music?");
+console.log();
 
 console.log('Looks like you have great taste in music. Your favorite songs:');
 
